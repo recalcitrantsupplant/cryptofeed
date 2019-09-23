@@ -15,7 +15,7 @@ from cryptofeed.backends._util import book_convert, book_delta_convert
 
 
 class RedisCallback:
-    def __init__(self, host='127.0.0.1', port=6379, socket=None, key=None, numeric_type=str, **kwargs):
+    def __init__(self, host='redis', port=6379, socket=None, key=None, numeric_type=str, **kwargs):
         """
         setting key lets you override the prefix on the
         key used in redis. The defaults are related to the data
